@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function load_msg() {
+		window.alert("홈페이지에 오신걸 환영합니다.");
+	}
+
+	function get_focus(x) {
+		window.alert(x.name + "의 위치에 커서가 존재");
+	}
+
+	function off_focus(x) {
+		window.alert(x.name + "의 위치에 커서가 빠져나감");
+	}
+
+	function btn_onclick() {
+		var aa = document.getElementById('test_div');
+		aa.innerHTML = "뚜둔" + document.test.name.value + "ㅋ";
+		
+	}
+</script>
+</head>
+<body onLoad="load_msg()">
+	<!-- onLoad : body에 있는 내용이 전부 출력되고 난 후에 출력되는 거 -->
+	<form action="" name="test">
+		이름 : <input type="text" name="name" onFocus="get_focus(this)"
+			onBlur="off_focus(this)" /><br /> <!-- this : input 요소를 뜻함-->
+		주소 : <input type="text" name="address" onFocus="get_focus(this)"
+			onBlur="off_focus(this)" /><br /> <input type="button" value="전송"
+			onClick="btn_onclick()" />	<!-- onFocus : 요소가 포커스를 얻을 때 발생!  onBlur:onFocus의 반대 -->
+	</form>
+
+	<div id="test_div"></div>
+</body>
+</html>

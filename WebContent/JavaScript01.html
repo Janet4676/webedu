@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+/* 	var aa = confirm("오늘의 날씨는?");
+	document.write(aa);
+	 */
+/* 	함수 형식
+	function 함수이름(매개변수들) {
+		실행할 내용들;
+		Return 반환값;
+	}
+	
+	function sum(a,b) {
+		return a+b;
+	}
+	function hab() {
+		c = a+b;
+	}
+	*/
+	
+	function aa() {
+		document.write("인자가 없는 함수 호출<br>");
+	}
+	function bb(i,j) {
+		document.write("인자가 있는 함수 호출:"+i+","+j+"<br>");
+	}
+	function cc(a) {
+		document.write(a+"에 10을 더해서 리턴하는 함수<br>");
+		return a+10;
+	}
+</script>
+</head>
+<body>
+	<script>
+	// 함수호출
+	aa();
+	bb(10,20);
+	var sum=cc(100);
+	document.write("리턴값"+sum)
+	</script>
+
+</body>
+</html>

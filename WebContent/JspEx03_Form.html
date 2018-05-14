@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="JspEx03.jsp" method="post">	
+이름 : <input type="text" name="name"/>	<br />
+아이디 : <input type="text" name="id"/>	<br />
+비밀번호 : <input type="password" name="pw"/>	<br />
+성별 :
+<input type="radio" name="gender" value="man"/>남
+<input type="radio" name="gender" value="woman"/>여
+<br />
+지역 : <select name="local" id="">
+	<option value="1">서울</option>
+	<option value="2">부산</option>
+	<option value="3">울산</option>
+	<option value="4">대전</option>
+</select><br />
+취미 : <input type="checkbox" name="hobbys" value="1"/> 등산
+<input type="checkbox" name="hobbys" value="2"/> 독서
+<input type="checkbox" name="hobbys" value="3"/> 영화감상
+<input type="checkbox" name="hobbys" value="4"/> 음악감상
+<br /><br />
+<input type="submit" value="전송" />
+<input type="reset" value="초기화" />
+</form>
+</body>
+</html>
